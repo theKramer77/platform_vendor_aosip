@@ -129,5 +129,8 @@ include vendor/aosip/config/packages.mk
 # Themes
 include vendor/aosip/config/themes.mk
 
+# Prebuilts
+$(call inherit-product-if-exists, vendor/prebuilts/packages.mk)
+
 # Versioning
 include vendor/aosip/config/version.mk
